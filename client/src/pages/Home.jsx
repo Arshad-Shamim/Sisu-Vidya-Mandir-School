@@ -57,7 +57,7 @@ export default function Home() {
 
             </div>
                 <div id="meet" className='position-absolute bottom-0 pb-4'>
-                    <h1 className='mx-auto text-center'>Where Education Meet <span className='text-primary dancing-script-text'>"{words[index]}"</span></h1>
+                    <h1 className='mx-auto text-center'>Where Education Meet <span className='text-primary dancing-script-text'>&quot;{words[index]}&quot;</span></h1>
                 </div>
         </section>
     </>
