@@ -1,7 +1,4 @@
 
-*{
-  overflow-x: hidden;
-}
 #logo{
     width: 10vw;
     height: 10vh;
@@ -33,9 +30,9 @@
     color: white;
   }
 
-  @media(min-width:700px) {
+  @media(min-width:1000px) {
     #meet{
-      margin-left: 24%;
+      margin-left: 26%;
       color: white;
       font-size: 4000px;
     }
@@ -49,6 +46,14 @@
     }
     #quote{
       display: none;
+    }
+  }
+
+  @media(min-width:701px) and (max-width:999px){
+    #meet{
+      font-size: xx-small;
+      color: white;
+      margin-left: 18%;
     }
   }
 
