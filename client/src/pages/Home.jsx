@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 
 import '../cascading/home.css'
 import icon from '../assets/icon.jpg'
@@ -6,8 +6,17 @@ import bg_viedo from '../assets/background.mp4'
 
 export default function Home() {
 
-    const words = ["Teacher"]
+    const words = ["Success!","Dreams!","Creativity!","Discipline!","Innovation!"]
     const [index,setIndex] = useState(0)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setIndex((prevIndex) => (prevIndex + 1) % words.length);
+        }, 2000); // Change word every 2 seconds
+    
+        return () => clearInterval(interval);
+      }, []);    
+
   return (
     <>
         <section>
@@ -44,9 +53,12 @@ export default function Home() {
             <div className="content text-center col-md-7 col-10">
                 <h1 className="display-4 fw-bold">Sishu Viday Mandir School</h1>
                 <p className="fs-5"> Hindol, Dhenkanal</p>
-                <p className="fs-4 fst-italic">"Where learning meets excellence!"</p>
+                <p className="fs-4 fst-italic" id="quote">"Where learning meets excellence!"</p>
 
             </div>
+                <div id="meet" className='position-absolute bottom-0 pb-4'>
+                    <h1 className='mx-auto text-center'>Where Education Meet <span className='text-primary dancing-script-text'>"{words[index]}"</span></h1>
+                </div>
         </section>
     </>
     
