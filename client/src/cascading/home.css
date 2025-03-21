@@ -67,4 +67,34 @@
     font-style: normal;
   }
   
+
+  .scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+  
+  .scroll-content {
+    display: inline-block;
+    animation: scrollText 15s linear infinite;
+  }
+  
+  .scroll-content a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: red;
+  }
+  
+  @keyframes scrollText {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
   

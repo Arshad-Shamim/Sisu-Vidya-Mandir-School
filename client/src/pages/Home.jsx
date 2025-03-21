@@ -17,6 +17,14 @@ export default function Home() {
         return () => clearInterval(interval);
       }, []);    
 
+
+      const notices = [
+        { title: "Exam Schedule", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
+        { title: "Holiday List", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
+        { title: "Fee Structure", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
+        { title: "Syllabus 2025", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
+      ];
+
   return (
     <>
         <section>
@@ -57,9 +65,30 @@ export default function Home() {
 
             </div>
                 <div id="meet" className='position-absolute pb-4'>
-                    <h1 className='mx-auto text-center'>Where Education Meet <span className='text-primary dancing-script-text'>&quot;{words[index]}&quot;</span></h1>
+                    <h1 className='mx-auto text-center'>Where Education Meet <span className='text-warning dancing-script-text'>&quot;{words[index]}&quot;</span></h1>
                 </div>
         </section>
+
+        <div className="container mt-4 bg-light rounded py-2">
+            <h1 className="text-center py-2 text-uppercase">Notice</h1>
+            <div className="scroll-container">
+                <div className="scroll-content">
+                    {notices.map((notice, index) => (
+                        <a
+                        key={index}
+                        href={notice.link}
+                        className="list-group-item list-group-item-action text-danger"
+                        download
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >
+                        📄 {notice.title}
+                        </a>
+                    ))}
+                </div>
+            </div>
+        </div>
+
     </>
     
 
