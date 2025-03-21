@@ -77,7 +77,7 @@
   
   .scroll-content {
     display: inline-block;
-    animation: scrollText 15s linear infinite;
+    animation: scrollText 12s linear infinite;
   }
   
   .scroll-content a {
