@@ -56,7 +56,7 @@ export default function Home() {
                 <p className="fs-4 fst-italic" id="quote">"Where learning meets excellence!"</p>
 
             </div>
-                <div id="meet" className='position-absolute bottom-0 pb-4'>
+                <div id="meet" className='position-absolute pb-4'>
                     <h1 className='mx-auto text-center'>Where Education Meet <span className='text-primary dancing-script-text'>&quot;{words[index]}&quot;</span></h1>
                 </div>
         </section>
