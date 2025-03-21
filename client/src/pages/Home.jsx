@@ -1,8 +1,13 @@
 import React, { useState ,useEffect} from 'react'
+import {Carousel} from 'react-bootstrap'
 
 import '../cascading/home.css'
 import icon from '../assets/icon.jpg'
 import bg_viedo from '../assets/background.mp4'
+import sportDay from '../assets/sportDay.jpg'
+import annualFuncation from '../assets/annualFuncation.jpg'
+import scienceFair from '../assets/scienceFair.jpeg'
+import independenceDay from '../assets/independenceDay.jpg'
 
 export default function Home() {
 
@@ -18,12 +23,20 @@ export default function Home() {
       }, []);    
 
 
-      const notices = [
+    const notices = [
         { title: "Exam Schedule", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
         { title: "Holiday List", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
         { title: "Fee Structure", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
         { title: "Syllabus 2025", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
-      ];
+    ];
+
+    const images = [
+        { src: sportDay, alt: "Sports Day" },
+        { src: annualFuncation, alt: "Annual Function" },
+        { src: scienceFair, alt: "Science Fair" },
+        { src: independenceDay, alt: "Independence Day Celebration" },
+    ];
+      
 
   return (
     <>
@@ -69,26 +82,43 @@ export default function Home() {
                 </div>
         </section>
 
-        <div className="container mt-4 bg-light rounded py-2">
-            <h1 className="text-center py-2 text-uppercase">Notice</h1>
-            <div className="scroll-container">
-                <div className="scroll-content">
-                    {notices.map((notice, index) => (
-                        <a
-                        key={index}
-                        href={notice.link}
-                        className="list-group-item list-group-item-action text-danger"
-                        download
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        >
-                        📄 {notice.title}
-                        </a>
-                    ))}
+        <section>
+            <div className="container mt-4 bg-light rounded pb-4">
+                <h1 className="text-center py-2 text-uppercase fw-bold">Notice</h1>
+                <div className="scroll-container">
+                    <div className="scroll-content">
+                        {notices.map((notice, index) => (
+                            <a
+                            key={index}
+                            href={notice.link}
+                            className="list-group-item list-group-item-action text-danger"
+                            download
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            >
+                            📄 {notice.title}
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </section>
+        
+        <section>
+            <div className="container mt-4">
+                <h3 className="text-center fw-bold py-1">School Activities</h3>
+                <Carousel>
+                    {images.map((image, index) => (
+                    <Carousel.Item key={index}>
+                        <img className="d-block mx-auto border" src={image.src} alt={image.alt} style={{height:"70vh",width:"80vw",borderRadius:"30px"}}/>
+                        <Carousel.Caption>
+                        <h5 className='text-dark fw-bold fs-1'>{image.alt}</h5>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    ))}
+                </Carousel>
+            </div>
+        </section>
     </>
     
 
