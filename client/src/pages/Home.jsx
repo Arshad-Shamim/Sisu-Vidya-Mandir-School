@@ -110,7 +110,7 @@ export default function Home() {
                 <Carousel>
                     {images.map((image, index) => (
                     <Carousel.Item key={index}>
-                        <img className="d-block mx-auto border" src={image.src} alt={image.alt} style={{height:"70vh",width:"80vw",borderRadius:"30px"}}/>
+                        <img className="d-block mx-auto border" src={image.src} alt={image.alt} style={{height:"60vh",width:"80vw",borderRadius:"30px"}}/>
                         <Carousel.Caption>
                         <h5 className='text-dark fw-bold fs-1'>{image.alt}</h5>
                         </Carousel.Caption>
