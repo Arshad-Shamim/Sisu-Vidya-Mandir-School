@@ -1,5 +1,5 @@
 import React, { useState ,useEffect} from 'react'
-import {Carousel} from 'react-bootstrap'
+import {Carousel,Container, Row, Col, Card } from 'react-bootstrap'
 
 import '../cascading/home.css'
 import icon from '../assets/icon.jpg'
@@ -8,6 +8,9 @@ import sportDay from '../assets/sportDay.jpg'
 import annualFuncation from '../assets/annualFuncation.jpg'
 import scienceFair from '../assets/scienceFair.jpeg'
 import independenceDay from '../assets/independenceDay.jpg'
+import hunPer from '../assets/100per.jpg'
+import alumni from '../assets/alumni.webp'
+import competitions from '../assets/competitions.jpg'
 
 export default function Home() {
 
@@ -24,9 +27,9 @@ export default function Home() {
 
 
     const notices = [
-        { title: "Exam Schedule", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
-        { title: "Holiday List", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
-        { title: "Fee Structure", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
+        { title: "Admissions Open for 2025-26", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
+        { title: "Upcoming Annual Function", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
+        { title: "New Digital Learning Portal Launched ", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
         { title: "Syllabus 2025", link: "https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" },
     ];
 
@@ -36,6 +39,28 @@ export default function Home() {
         { src: scienceFair, alt: "Science Fair" },
         { src: independenceDay, alt: "Independence Day Celebration" },
     ];
+
+    const achievementsData = [
+        {
+          title: "Board Results",
+          year: "2024",
+          description: "100% pass results in board exams consistently",
+          image: hunPer
+        },
+        {
+          title: "Olympiads & Competitions",
+          year: "2024",
+          description: "Students ranked among top positions in district-level Olympiads & competitions.",
+          image: competitions
+        },
+        {
+          title: "Alumni Excelling",
+          year: "2024",
+          description: "Successful alumni excelling in various professional fields.",
+          image: alumni
+        }
+      ];
+      
       
 
   return (
@@ -74,7 +99,7 @@ export default function Home() {
             <div className="content text-center col-md-7 col-10">
                 <h1 className="display-4 fw-bold">Sishu Viday Mandir School</h1>
                 <p className="fs-5"> Hindol, Dhenkanal</p>
-                <p className="fs-4 fst-italic" id="quote">"Where learning meets excellence!"</p>
+                <p className="fs-4 fst-italic" id="quote">"Shaping Future Leaders Through Quality Education"</p>
 
             </div>
                 <div id="meet" className='position-absolute pb-4'>
@@ -82,9 +107,9 @@ export default function Home() {
                 </div>
         </section>
 
-        <section>
-            <div className="container mt-4 bg-light rounded pb-4">
-                <h1 className="text-center py-2 text-uppercase fw-bold">Notice</h1>
+        <section className="my-4">
+            <h2 className="text-center heading-color heading">Announcements</h2>
+            <div className="container bg-light rounded py-3">
                 <div className="scroll-container">
                     <div className="scroll-content">
                         {notices.map((notice, index) => (
@@ -106,18 +131,38 @@ export default function Home() {
         
         <section>
             <div className="container mt-4">
-                <h3 className="text-center fw-bold py-1">School Activities</h3>
+                <h3 className="text-center heading py-1 heading-color">School Activities</h3>
                 <Carousel>
                     {images.map((image, index) => (
                     <Carousel.Item key={index}>
-                        <img className="d-block mx-auto border" src={image.src} alt={image.alt} style={{height:"60vh",width:"80vw",borderRadius:"30px"}}/>
+                        <img className="d-block mx-auto border col-12" src={image.src} alt={image.alt} style={{height:"60v",borderRadius:"30px"}}/>
                         <Carousel.Caption>
-                        <h5 className='text-dark fw-bold fs-1'>{image.alt}</h5>
+                        <h5 className='text-dark fw-bold fs-1 text-white'>{image.alt}</h5>
                         </Carousel.Caption>
                     </Carousel.Item>
                     ))}
                 </Carousel>
             </div>
+        </section>
+
+        <section>
+            <Container className="my-5">
+                <h2 className="text-center mb-4 heading heading-color">Our Achievements</h2>
+                <Row className="justify-content-center">
+                    {achievementsData.map((achievement, index) => (
+                    <Col md={4} sm={6} key={index} className="mb-4">
+                        <Card className="shadow-lg border-0">
+                        <Card.Img variant="top" src={achievement.image} alt={achievement.title} style={{height:"35vh"}}/>
+                        <Card.Body>
+                            <Card.Title style={{fontWeight:600}}>{achievement.title}</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">{achievement.year}</Card.Subtitle>
+                            <Card.Text style={{height:"15vh",overflowY:"scroll"}}>{achievement.description}</Card.Text>
+                        </Card.Body>
+                        </Card>
+                    </Col>
+                    ))}
+                </Row>
+            </Container>
         </section>
     </>
     

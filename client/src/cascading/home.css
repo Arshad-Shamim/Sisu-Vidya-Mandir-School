@@ -96,5 +96,13 @@
       transform: translateX(-100%);
     }
   }
+
+  .heading{
+    font-weight: 600;
+  }
+
+  .heading-color{
+    color: blue;
+  }
   
   
