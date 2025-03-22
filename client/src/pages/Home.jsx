@@ -59,7 +59,15 @@ export default function Home() {
           description: "Successful alumni excelling in various professional fields.",
           image: alumni
         }
-      ];
+    ];
+
+    const update = [
+        "Admissions Open for 2025-26 – Secure your child’s future! Apply Now",
+        "Science Olympiad Registration Begins – Encourage your child to participate!",
+        "Parent-Teacher Meeting (PTM) Notification – Check the schedule for your child’s class.",
+        " Winter Vacation Dates Announced – School will remain closed from [Start Date] to [End Date].",
+        " Scholarship Exam for Meritorious Students – Apply before the deadline!"
+    ]
       
       
 
@@ -107,24 +115,22 @@ export default function Home() {
                 </div>
         </section>
 
-        <section className="my-4">
-            <h2 className="text-center heading-color heading">Announcements</h2>
-            <div className="container bg-light rounded py-3">
-                <div className="scroll-container">
-                    <div className="scroll-content">
-                        {notices.map((notice, index) => (
-                            <a
-                            key={index}
-                            href={notice.link}
-                            className="list-group-item list-group-item-action text-danger"
-                            download
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            >
-                            📄 {notice.title}
-                            </a>
-                        ))}
-                    </div>
+        <section className="container my-4">
+            <div className="card shadow-lg">
+                <div className="card-header bg-primary text-white">
+                <h4 className="mb-0">Important Updates</h4>
+                </div>
+                <div className="card-body">
+                <ul className="list-group">
+                    {update.map((value,index)=>(
+                        <l1 key={index} className="list-group-item">
+                            {value}
+                        </l1>)
+                    )}
+                    <li className="list-group-item text-primary text-center">
+                    <strong>Stay tuned for more updates!</strong>
+                    </li>
+                </ul>
                 </div>
             </div>
         </section>
@@ -166,6 +172,6 @@ export default function Home() {
         </section>
     </>
     
-
+                
   )
 }
