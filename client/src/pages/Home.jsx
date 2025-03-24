@@ -4,10 +4,6 @@ import {Carousel,Container, Row, Col, Card } from 'react-bootstrap'
 import '../cascading/home.css'
 import icon from '../assets/icon.jpg'
 import bg_viedo from '../assets/background.mp4'
-import sportDay from '../assets/sportDay.jpg'
-import annualFuncation from '../assets/annualFuncation.jpg'
-import scienceFair from '../assets/scienceFair.jpeg'
-import independenceDay from '../assets/independenceDay.jpg'
 import selfDefence from '../assets/selfDefence.avif'
 import musicDance from '../assets/musicDance.jpg'
 import DigitalClasses from '../assets/DigitalClasses.jpg'
@@ -130,17 +126,24 @@ export default function Home() {
                     <p>Established with the vision to nurture responsible, disciplined, and knowledgeable citizens, Sisu Vidya Mandir focuses on academic excellence, personality development, and cultural heritage. With a team of dedicated educators, state-of-the-art facilities, and an engaging curriculum, we prepare students to succeed in all walks of life.</p>
                 </div>
 
+
                 <div className='conatiner overview-lg my-2'>
-                    <h3 className='sub-heading-color'>Why Choose Us?</h3>
-                    <ul className='text-start'>
-                            <li>Quality Education: CBSE-aligned syllabus with interactive learning.</li>
-                            <li>Moral & Ethical Values: Strong emphasis on Indian traditions & discipline.</li>
-                            <li>Skill-Based Learning: Digital education, leadership programs & extracurriculars.</li>
-                            <li>Self-Defense & Fitness: Karate, Yoga, and Physical Training programs.</li>
-                            <li>Technology-Enabled Classrooms: Smart classes & e-learning modules.</li>
-                            <li>Scout & Guide Training: Leadership, teamwork & adventure-based learning.</li>
-                            <li>Experienced Faculty: Highly qualified teachers dedicated to student success.</li>
-                    </ul>
+                    <div className='row col-12 mt-3'>
+                        <div className='col-md-5 d-flex'>
+                            <img src={whyus} alt="" className='img-fluid col-md-9 mx-auto my-auto'/>
+                        </div>
+                        <div className='col-md-7'>
+                            <ul className='text-start'>
+                                <li>Quality Education: CBSE-aligned syllabus with interactive learning.</li>
+                                <li>Moral & Ethical Values: Strong emphasis on Indian traditions & discipline.</li>
+                                <li>Skill-Based Learning: Digital education, leadership programs & extracurriculars.</li>
+                                <li>Self-Defense & Fitness: Karate, Yoga, and Physical Training programs.</li>
+                                <li>Technology-Enabled Classrooms: Smart classes & e-learning modules.</li>
+                                <li>Scout & Guide Training: Leadership, teamwork & adventure-based learning.</li>
+                                <li>Experienced Faculty: Highly qualified teachers dedicated to student success.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div className='conatiner overview-lg my-2'>
