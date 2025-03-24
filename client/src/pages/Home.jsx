@@ -6,9 +6,11 @@ import icon from '../assets/icon.jpg'
 import bg_viedo from '../assets/background.mp4'
 import selfDefence from '../assets/selfDefence.avif'
 import musicDance from '../assets/musicDance.jpg'
-import DigitalClasses from '../assets/DigitalClasses.jpg'
+import DigitalClasses from '../assets/digitalClasses.jpg'
 import scoutTraning from '../assets/scoutTraning.jpg'
 import whyus from '../assets/whyus.png'
+import academic from '../assets/academic.png'
+import namastai from '../assets/namastai.png'
 
 export default function Home() {
 
@@ -120,6 +122,9 @@ export default function Home() {
         {/* section3 */}
         <section id="school-overview">
             <div class="container">
+                <div>
+                    <img src={namastai} alt="loading" style={{width:"44vh",height:"22vh"}}/>
+                </div>
                 <h2 className='heading-color heading'>Welcome to SV Mandir School</h2>
                 <p className='heading-color fst-italic'> A Legacy of Excellence in Education</p>
                 <div className='conatiner overview-lg my-3'>
@@ -149,12 +154,19 @@ export default function Home() {
 
                 <div className='conatiner overview-lg my-2'>
                     <h3 className='sub-heading-color'>Our Academic Approach</h3>
-                    <ul className='text-start'>
-                            <li>Innovative Curriculum: Encouraging creative thinking & problem-solving.</li>
-                            <li>Activity-Based Learning: Hands-on projects, science experiments & field trips.</li>
-                            <li>Competitive Exam Preparation: Olympiads, NTSE, and career guidance.</li>
-                            <li>Special Focus on Languages: English, Odia, Hindi, and Sanskrit.</li>
-                    </ul>
+                    <div className='col-12 row'>
+                        <div className='col-md-6'>
+                            <ul className='text-start'>
+                                    <li>Innovative Curriculum: Encouraging creative thinking & problem-solving.</li>
+                                    <li>Activity-Based Learning: Hands-on projects, science experiments & field trips.</li>
+                                    <li>Competitive Exam Preparation: Olympiads, NTSE, and career guidance.</li>
+                                    <li>Special Focus on Languages: English, Odia, Hindi, and Sanskrit.</li>
+                            </ul>
+                        </div>
+                        <div className='col-md-6'>
+                            <img src={academic} alt="loading..." className='img-fluid' />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
