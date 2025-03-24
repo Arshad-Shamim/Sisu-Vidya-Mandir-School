@@ -8,6 +8,9 @@ import selfDefence from '../assets/selfDefence.avif'
 import musicDance from '../assets/musicDance.jpg'
 import DigitalClasses from '../assets/digitalClasses.jpg'
 import scoutTraning from '../assets/scoutTraning.jpg'
+import whyus from '../assets/whyus.png'
+import academic from '../assets/academic.png'
+import namastai from '../assets/namastai.png'
 
 export default function Home() {
 
@@ -119,6 +122,9 @@ export default function Home() {
         {/* section3 */}
         <section id="school-overview">
             <div class="container">
+                <div>
+                    <img src={namastai} alt="loading" style={{width:"44vh",height:"22vh"}}/>
+                </div>
                 <h2 className='heading-color heading'>Welcome to SV Mandir School</h2>
                 <p className='heading-color fst-italic'> A Legacy of Excellence in Education</p>
                 <div className='conatiner overview-lg my-3'>
@@ -126,27 +132,41 @@ export default function Home() {
                     <p>Established with the vision to nurture responsible, disciplined, and knowledgeable citizens, Sisu Vidya Mandir focuses on academic excellence, personality development, and cultural heritage. With a team of dedicated educators, state-of-the-art facilities, and an engaging curriculum, we prepare students to succeed in all walks of life.</p>
                 </div>
 
+
                 <div className='conatiner overview-lg my-2'>
-                    <h3 className='sub-heading-color'>Why Choose Us?</h3>
-                    <ul className='text-start'>
-                            <li>Quality Education: CBSE-aligned syllabus with interactive learning.</li>
-                            <li>Moral & Ethical Values: Strong emphasis on Indian traditions & discipline.</li>
-                            <li>Skill-Based Learning: Digital education, leadership programs & extracurriculars.</li>
-                            <li>Self-Defense & Fitness: Karate, Yoga, and Physical Training programs.</li>
-                            <li>Technology-Enabled Classrooms: Smart classes & e-learning modules.</li>
-                            <li>Scout & Guide Training: Leadership, teamwork & adventure-based learning.</li>
-                            <li>Experienced Faculty: Highly qualified teachers dedicated to student success.</li>
-                    </ul>
+                    <div className='row col-12 mt-3'>
+                        <div className='col-md-5 d-flex'>
+                            <img src={whyus} alt="" className='img-fluid col-md-9 mx-auto my-auto'/>
+                        </div>
+                        <div className='col-md-7'>
+                            <ul className='text-start'>
+                                <li>Quality Education: CBSE-aligned syllabus with interactive learning.</li>
+                                <li>Moral & Ethical Values: Strong emphasis on Indian traditions & discipline.</li>
+                                <li>Skill-Based Learning: Digital education, leadership programs & extracurriculars.</li>
+                                <li>Self-Defense & Fitness: Karate, Yoga, and Physical Training programs.</li>
+                                <li>Technology-Enabled Classrooms: Smart classes & e-learning modules.</li>
+                                <li>Scout & Guide Training: Leadership, teamwork & adventure-based learning.</li>
+                                <li>Experienced Faculty: Highly qualified teachers dedicated to student success.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div className='conatiner overview-lg my-2'>
                     <h3 className='sub-heading-color'>Our Academic Approach</h3>
-                    <ul className='text-start'>
-                            <li>Innovative Curriculum: Encouraging creative thinking & problem-solving.</li>
-                            <li>Activity-Based Learning: Hands-on projects, science experiments & field trips.</li>
-                            <li>Competitive Exam Preparation: Olympiads, NTSE, and career guidance.</li>
-                            <li>Special Focus on Languages: English, Odia, Hindi, and Sanskrit.</li>
-                    </ul>
+                    <div className='col-12 row'>
+                        <div className='col-md-6'>
+                            <ul className='text-start'>
+                                    <li>Innovative Curriculum: Encouraging creative thinking & problem-solving.</li>
+                                    <li>Activity-Based Learning: Hands-on projects, science experiments & field trips.</li>
+                                    <li>Competitive Exam Preparation: Olympiads, NTSE, and career guidance.</li>
+                                    <li>Special Focus on Languages: English, Odia, Hindi, and Sanskrit.</li>
+                            </ul>
+                        </div>
+                        <div className='col-md-6'>
+                            <img src={academic} alt="loading..." className='img-fluid' />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -208,6 +228,44 @@ export default function Home() {
                 </Carousel>
             </div>
         </section> */}
+
+                {/* section6 */}
+                <section>
+            <footer className="bg-dark text-white py-4">
+                <div className="container text-center">
+                    {/* Logo */}
+                    <img src={icon} alt="School Logo" className="mb-3" style={{ width: "80px" }} />
+
+                    {/* Contact Info */}
+                    <p>📍 Hindol, Dhenkanal, Odisha, India</p>
+                    <p>📧gengutiasishimandir@gmail.com | 📞+91 9437349352</p>
+
+                    {/* Navigation Links */}
+                    <nav>
+                    <a href="/" className="text-white mx-2 text-decoration-none">Home</a>
+                    <a href="/about" className="text-white mx-2 text-decoration-none">About</a>
+                    <a href="/courses" className="text-white mx-2 text-decoration-none">Courses</a>
+                    <a href="/contact" className="text-white mx-2 text-decoration-none">Contact</a>
+                    </nav>
+
+                    {/* Social Media Icons */}
+                    <div className="mt-3">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+                        <i className="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+                        <i className="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+                        <i className="fab fa-twitter"></i>
+                    </a>
+                    </div>
+
+                    {/* Copyright */}
+                    <p className="mt-3 mb-0">&copy; 2025 SV Mandir School. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </section>
     </>   
   )
 }
