@@ -8,6 +8,7 @@ import selfDefence from '../assets/selfDefence.avif'
 import musicDance from '../assets/musicDance.jpg'
 import DigitalClasses from '../assets/DigitalClasses.jpg'
 import scoutTraning from '../assets/scoutTraning.jpg'
+import whyus from '../assets/whyus.png'
 
 export default function Home() {
 
