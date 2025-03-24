@@ -118,9 +118,8 @@ export default function Home() {
         <section id="school-overview">
             <div class="container">
                 <h2 className='heading-color heading'>Welcome to SV Mandir School</h2>
-                <p className='heading-color'>Shaping young minds with excellence in education and values.</p>
 
-                <div className='conatiner overview-lg my-2'>
+                <div className='conatiner overview-lg my-3'>
                     <h3 className='sub-heading-color'>About Us</h3>
                     <p>Established with the vision to nurture responsible, disciplined, and knowledgeable citizens, Sisu Vidya Mandir focuses on academic excellence, personality development, and cultural heritage. With a team of dedicated educators, state-of-the-art facilities, and an engaging curriculum, we prepare students to succeed in all walks of life.</p>
                 </div>
@@ -179,7 +178,7 @@ export default function Home() {
         <section className="container my-4">
             <div className="card shadow-lg">
                 <div className="card-header bg-primary text-white">
-                <h4 className="mb-0">Important Updates</h4>
+                <h4 className="mb-0 text-center">Important Updates</h4>
                 </div>
                 <div className="card-body">
                 <ul className="list-group">
@@ -218,7 +217,7 @@ export default function Home() {
                 <Row className="justify-content-center">
                     {achievementsData.map((achievement, index) => (
                     <Col md={4} sm={6} key={index} className="mb-4">
-                        <Card className="shadow-lg border-0">
+                        <Card className="shadow-lg" style={{borderBottom:"2px solid rgba(56, 56, 247, 0.39)"}}>
                         <Card.Img variant="top" src={achievement.image} alt={achievement.title} style={{height:"35vh"}}/>
                         <Card.Body>
                             <Card.Title style={{fontWeight:600}}>{achievement.title}</Card.Title>
