@@ -212,6 +212,44 @@ export default function Home() {
                 </Carousel>
             </div>
         </section> */}
+
+                {/* section6 */}
+                <section>
+            <footer className="bg-dark text-white py-4">
+                <div className="container text-center">
+                    {/* Logo */}
+                    <img src={icon} alt="School Logo" className="mb-3" style={{ width: "80px" }} />
+
+                    {/* Contact Info */}
+                    <p>📍 Hindol, Dhenkanal, Odisha, India</p>
+                    <p>📧gengutiasishimandir@gmail.com | 📞+91 9437349352</p>
+
+                    {/* Navigation Links */}
+                    <nav>
+                    <a href="/" className="text-white mx-2 text-decoration-none">Home</a>
+                    <a href="/about" className="text-white mx-2 text-decoration-none">About</a>
+                    <a href="/courses" className="text-white mx-2 text-decoration-none">Courses</a>
+                    <a href="/contact" className="text-white mx-2 text-decoration-none">Contact</a>
+                    </nav>
+
+                    {/* Social Media Icons */}
+                    <div className="mt-3">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+                        <i className="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+                        <i className="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+                        <i className="fab fa-twitter"></i>
+                    </a>
+                    </div>
+
+                    {/* Copyright */}
+                    <p className="mt-3 mb-0">&copy; 2025 SV Mandir School. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </section>
     </>   
   )
 }
