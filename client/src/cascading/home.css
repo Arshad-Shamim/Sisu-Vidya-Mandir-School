@@ -5,6 +5,7 @@
     object-fit:fill;
 }
 
+/* section2 */
 .video-section {
     position: relative;
     width: 100%;
@@ -66,36 +67,8 @@
     font-weight: 400;
     font-style: normal;
   }
-  
 
-  .scroll-container {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 100%;
-  }
-  
-  .scroll-content {
-    display: inline-block;
-    animation: scrollText 12s linear infinite;
-  }
-  
-  .scroll-content a {
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    color: red;
-  }
-  
-  @keyframes scrollText {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
+  /* section2 */
 
   .heading{
     font-weight: 600;
@@ -109,15 +82,11 @@
     color:  rgb(57, 57, 243);
   }
   
+  /* section3 */
 
   #school-overview {
     padding: 50px 20px;
     text-align: center;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
 }
 
 .overview-grid {
@@ -147,5 +116,7 @@
 .border-botto{
   border-bottom: 10px solid rgba(56, 56, 247, 0.39);
 }
+
+/* section3 */
 
   
