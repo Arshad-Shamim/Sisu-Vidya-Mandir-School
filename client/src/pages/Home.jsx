@@ -2,9 +2,9 @@ import React, { useState ,useEffect} from 'react'
 import {Carousel,Container, Row, Col, Card } from 'react-bootstrap'
 
 import '../cascading/home.css'
-import icon from '../assets/icon.jpg'
+import icon from '../assets/logo.png'
 import bg_viedo from '../assets/background.mp4'
-import selfDefence from '../assets/selfDefence.avif'
+import selfDefence from '../assets/selfDefence.jpg'
 import musicDance from '../assets/musicDance.jpg'
 import DigitalClasses from '../assets/digitalClasses.jpg'
 import scoutTraning from '../assets/scoutTraning.jpg'
@@ -79,7 +79,7 @@ export default function Home() {
         <section>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/home"><img src={icon} alt="loading..."  id="logo" className='border rounded-circle'/></a>
+                    <a class="navbar-brand" href="/home"><img src={icon} alt="loading..."  id="logo" className='border-0 rounded-circle'/></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
