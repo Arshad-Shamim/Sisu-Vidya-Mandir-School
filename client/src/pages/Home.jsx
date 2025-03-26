@@ -12,6 +12,31 @@ import whyus from '../assets/whyus.png'
 import academic from '../assets/academic.png'
 import namastai from '../assets/namastai.png'
 
+
+function nav(){
+    return(
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/home"><img src={icon} alt="loading..."  id="logo" className='border-0 rounded-circle'/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto pe-5">
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="/aboutus">Aboutus</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    )
+}
+
 export default function Home() {
 
     const words = ["Success!","Dreams!","Creativity!","Discipline!","Innovation!"]
@@ -70,35 +95,13 @@ export default function Home() {
         " Winter Vacation Dates Announced – School will remain closed from 15/12/2025 to 31/12/2025",
         " Scholarship Exam for Meritorious Students – Apply before the deadline!"
     ]
-      
-      
+       
 
   return (
     <>
         {/* section1 */}
         <section>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/home"><img src={icon} alt="loading..."  id="logo" className='border-0 rounded-circle'/></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto pe-5">
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Pricing</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            {nav()}
         </section>
         
         {/* section2 */}
@@ -269,3 +272,5 @@ export default function Home() {
     </>   
   )
 }
+
+export{nav}
