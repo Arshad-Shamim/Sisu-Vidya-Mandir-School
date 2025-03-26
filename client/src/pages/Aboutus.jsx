@@ -28,11 +28,11 @@ export default function Aboutus() {
         <section>
             <div className='conatiner d-flex' id="sec-2">
                 <div className='mx-auto mt-auto container d-flex h-75'>
-                    <div className='my-auto'>
-                        <h3 className='my-3 text-center dancing-script-text' style={{color:"#dcdf28ee"}}>{msg[index]}</h3>
-                        <h5 className='container text-center' style={{color:"#f0f2f5d8"}}>
+                    <div className='my-auto col-md-10 mx-auto'>
+                        <h3 className='my-2 text-center dancing-script-text' style={{color:"#dcdf28ee"}}>{msg[index]}</h3>
+                        <p className='container text-center' style={{color:"#f0f2f5d8",fontSize:"18px"}}>
                             At Sisu Vidya Mandir, Hindol, we believe that education is the foundation of a strong and prosperous society. Our school is committed to providing a holistic learning experience that nurtures academic excellence, moral values, and physical well-being in every student.
-                        </h5>
+                        </p>
                     </div>
                 </div>
             </div>
