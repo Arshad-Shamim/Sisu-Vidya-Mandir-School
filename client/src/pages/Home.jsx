@@ -123,7 +123,7 @@ export default function Home() {
         <section id="school-overview">
             <div class="container">
                 <div>
-                    <img src={namastai} alt="loading" style={{width:"44vh",height:"22vh"}}/>
+                    <img src={namastai} alt="loading" style={{width:"35vh",height:"17vh"}}/>
                 </div>
                 <h2 className='heading-color heading'>Welcome to SV Mandir School</h2>
                 <p className='heading-color fst-italic'> A Legacy of Excellence in Education</p>
