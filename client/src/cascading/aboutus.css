@@ -5,3 +5,7 @@
     background-size:cover;
     background-position: center;
 }
+
+.linearGrade{
+    background: linear-gradient(to right,rgb(29, 54, 248),rgb(244, 8, 8));
+}

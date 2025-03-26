@@ -37,6 +37,40 @@ export default function Aboutus() {
                 </div>
             </div>
         </section>
+
+        <section>
+        <div className="container my-5">
+      <div className="text-center overview-lg p-2">
+        <h2 className="fw-bold">🎯 Our Vision</h2>
+        <p className="lead">
+          To create a learning environment that fosters discipline, creativity,
+          leadership, and a deep respect for Indian culture and traditions,
+          ensuring that every student becomes a responsible global citizen.
+        </p>
+      </div>
+    
+      <div className="mt-4 p-2 overview-lg linearGrade text-white">
+        <h2 className="fw-bold text-center">🌍 Our Mission</h2>
+        <ul className="list-group list-group-flush mt-3" >
+          <li className="list-group-item linearGrade text-white">
+            ✅ To provide high-quality education rooted in Indian values and modern learning techniques.
+          </li>
+          <li className="list-group-item linearGrade text-white">
+            ✅ To develop well-rounded individuals by integrating academics, extracurriculars, and life skills.
+          </li>
+          <li className="list-group-item linearGrade text-white">
+            ✅ To instill moral and ethical values through discipline, spiritual teachings, and social responsibility.
+          </li>
+          <li className="list-group-item linearGrade text-white">
+            ✅ To encourage innovation and technology by offering digital education and programming skills.
+          </li>
+          <li className="list-group-item linearGrade text-white">
+            ✅ To promote leadership and teamwork through Scout & Guide training and outdoor learning programs.
+          </li>
+        </ul>
+      </div>
+    </div>
+        </section>
     </>
   )
 }
