@@ -16,5 +16,13 @@
 }
 
 .sub-heading-color{
-    color:  rgb(57, 57, 243);
+    color:  rgba(243, 57, 116, 0.952);
+}
+
+.border-bottom{
+    border-bottom: rgb(57, 57, 243);
+}
+
+.heading{
+    font-weight: 600;
 }
