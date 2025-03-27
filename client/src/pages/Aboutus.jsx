@@ -1,4 +1,6 @@
 import React,{useEffect,useState} from 'react'
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { FaCheckCircle } from "react-icons/fa";
 
 import {nav} from './Home.jsx'
 import '../cascading/aboutus.css'
@@ -18,6 +20,14 @@ export default function Aboutus() {
     
     
     const msg = [" A Tradition of Excellence","A Legacy of Learning"," A Future of Possibilities"]
+
+      const values = [
+        { title: "Discipline & Respect", description: "Encouraging students to be responsible and ethical." },
+        { title: "Academic Excellence", description: "Providing a strong foundation in science, mathematics, and languages." },
+        { title: "Holistic Development", description: "Nurturing physical, mental, and emotional growth." },
+        { title: "Innovation & Creativity", description: "Encouraging students to think outside the box." },
+        { title: "Community Engagement", description: "Instilling a spirit of service and social responsibility." },
+    ];    
 
   return (
     <>
@@ -87,6 +97,26 @@ export default function Aboutus() {
               </div>
             </div>
           </div>
+        </section>
+
+
+        <section>
+          <Container className="my-5">
+            <h2 className="text-center mb-4 heading-color">Our Core Values</h2>
+            <Row className="g-4">
+              {values.map((value, index) => (
+                <Col md={6} lg={4} key={index}>
+                  <Card className="shadow-sm h-100" style={{borderBottom:"2px solid rgba(56, 56, 247, 0.39)"}}>
+                    <Card.Body className="text-center">
+                      <FaCheckCircle className="text-success fs-3 mb-2" />
+                      <Card.Title style={{color:"rgb(57, 57, 243)"}}>{value.title}</Card.Title>
+                      <Card.Text >{value.description}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+          </Container>
         </section>
     </>
   )
