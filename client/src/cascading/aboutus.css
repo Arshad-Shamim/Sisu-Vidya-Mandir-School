@@ -9,3 +9,8 @@
 .linearGrade{
     background: linear-gradient(to right,rgb(29, 54, 248),rgb(244, 8, 8));
 }
+
+
+.heading-color{
+    color: rgb(20, 20, 244);
+  }

@@ -1,8 +1,8 @@
 import React,{useEffect,useState} from 'react'
 
 import {nav} from './Home.jsx'
-import whyus from '../assets/whyus.png'
 import '../cascading/aboutus.css'
+import ourHistory from '../assets/ourHistory.jpg'
 
 export default function Aboutus() {
 
@@ -39,37 +39,54 @@ export default function Aboutus() {
         </section>
 
         <section>
-        <div className="container my-5">
-      <div className="text-center overview-lg p-2">
-        <h2 className="fw-bold">🎯 Our Vision</h2>
-        <p className="lead">
-          To create a learning environment that fosters discipline, creativity,
-          leadership, and a deep respect for Indian culture and traditions,
-          ensuring that every student becomes a responsible global citizen.
-        </p>
-      </div>
-    
-      <div className="mt-4 p-2 overview-lg linearGrade text-white">
-        <h2 className="fw-bold text-center">🌍 Our Mission</h2>
-        <ul className="list-group list-group-flush mt-3" >
-          <li className="list-group-item linearGrade text-white">
-            ✅ To provide high-quality education rooted in Indian values and modern learning techniques.
-          </li>
-          <li className="list-group-item linearGrade text-white">
-            ✅ To develop well-rounded individuals by integrating academics, extracurriculars, and life skills.
-          </li>
-          <li className="list-group-item linearGrade text-white">
-            ✅ To instill moral and ethical values through discipline, spiritual teachings, and social responsibility.
-          </li>
-          <li className="list-group-item linearGrade text-white">
-            ✅ To encourage innovation and technology by offering digital education and programming skills.
-          </li>
-          <li className="list-group-item linearGrade text-white">
-            ✅ To promote leadership and teamwork through Scout & Guide training and outdoor learning programs.
-          </li>
-        </ul>
-      </div>
-    </div>
+          <div className="container my-5">
+            <div className="text-center overview-lg p-2">
+              <h2 className="fw-bold">🎯 Our Vision</h2>
+              <p className="lead">
+                To create a learning environment that fosters discipline, creativity,
+                leadership, and a deep respect for Indian culture and traditions,
+                ensuring that every student becomes a responsible global citizen.
+              </p>
+            </div>
+      
+            <div className="mt-4 p-2 overview-lg linearGrade text-white">
+              <h2 className="fw-bold text-center">Our Mission</h2>
+              <ul className="list-group list-group-flush mt-3" >
+                <li className="list-group-item linearGrade text-white">
+                  ✅ To provide high-quality education rooted in Indian values and modern learning techniques.
+                </li>
+                <li className="list-group-item linearGrade text-white">
+                  ✅ To develop well-rounded individuals by integrating academics, extracurriculars, and life skills.
+                </li>
+                <li className="list-group-item linearGrade text-white">
+                  ✅ To instill moral and ethical values through discipline, spiritual teachings, and social responsibility.
+                </li>
+                <li className="list-group-item linearGrade text-white">
+                  ✅ To encourage innovation and technology by offering digital education and programming skills.
+                </li>
+                <li className="list-group-item linearGrade text-white">
+                  ✅ To promote leadership and teamwork through Scout & Guide training and outdoor learning programs.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+        <div className="container my-5 row overview-lg mx-auto">
+            <div className='mb-2'>
+              <h1 className='heading-color text-center'>Our History</h1>
+            </div>
+            <div className='col-md-6'>
+              <p className='mx-auto text-center'>Sisu Vidya Mandir, Hindol, has been a pillar of academic and cultural excellence in Dhenkanal for many years. Founded with the vision of creating a generation of intellectually and morally strong students, the school has grown into a leading educational institution, offering modern facilities, a well-structured curriculum, and a strong emphasis on traditional Indian education.</p>
+            </div>
+
+            <div className='col-md-6'>
+              <div className='text-center'>
+                <img src={ourHistory} alt="" className="rounded" style={{width:"96%",height:"40vh"}} />
+              </div>
+            </div>
+          </div>
         </section>
     </>
   )
