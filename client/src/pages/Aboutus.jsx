@@ -95,7 +95,7 @@ export default function Aboutus() {
         </section>
 
         <section>
-            <div className='conatiner d-flex' id="sec-2">
+            <div className='conatiner d-flex' id="aboutus-sec-2">
                 <div className='mx-auto mt-auto container d-flex h-75'>
                     <div className='my-auto col-md-10 mx-auto'>
                         <h3 className='my-2 text-center dancing-script-text' style={{color:"#dcdf28ee"}}>{msg[index]}</h3>
@@ -111,7 +111,7 @@ export default function Aboutus() {
           <div className="container my-5">
             <div className="text-center overview-lg p-2">
               <h2 className="heading heading-color">🎯 Our Vision</h2>
-              <p className="lead">
+              <p className="">
                 To create a learning environment that fosters discipline, creativity,
                 leadership, and a deep respect for Indian culture and traditions,
                 ensuring that every student becomes a responsible global citizen.
@@ -120,7 +120,7 @@ export default function Aboutus() {
       
             <div className="mt-4 p-2 overview-lg">
               <h2 className="text-center heading-color heading">Our Mission</h2>
-              <ul className="list-group list-group-flush mt-3 lead" >
+              <ul className="list-group list-group-flush mt-3" >
                 <li className="list-group-item">
                   ✅ To provide high-quality education rooted in Indian values and modern learning techniques.
                 </li>
@@ -142,7 +142,7 @@ export default function Aboutus() {
         </section>
 
         <section>
-        <div className="container my-5 row overview-lg mx-auto lead">
+        <div className="container my-5 row overview-lg mx-auto">
             <div className='mb-2'>
               <h1 className='heading-color text-center heading'>Our History</h1>
             </div>
@@ -160,7 +160,7 @@ export default function Aboutus() {
 
 
         <section>
-          <Container className="my-5 lead">
+          <Container className="my-5">
             <h2 className="text-center mb-4 heading-color heading">Our Core Values</h2>
             <Row className="g-4">
               {values.map((value, index) => (
@@ -180,7 +180,7 @@ export default function Aboutus() {
 
 
         <section>
-          <div className="container my-5 lead">
+          <div className="container my-5">
             <h2 className="text-center mb-4 heading-color heading" >What Makes Us Unique?</h2>
               <div className="row">
                 {features.map((feature, index) => (
@@ -201,7 +201,7 @@ export default function Aboutus() {
         <section className='container-fluid my-4'>
           <div className='container'> 
             <h2 className="text-center mt-5 mb-4 heading heading-color">Our Achievements</h2>
-            <div className="row justify-content-center lead">
+            <div className="row justify-content-center">
               {achievements.map((achievement, index) => (
                 <div key={index} className="col-md-6 mb-3">
                   <div className="card shadow-sm p-3 border-0 h-100" style={{ borderBottom: "4px solid rgb(57, 57, 243)" }}>

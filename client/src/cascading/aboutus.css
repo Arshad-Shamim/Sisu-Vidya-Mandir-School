@@ -1,4 +1,4 @@
-#sec-2{
+#aboutus-sec-2{
     height: 86vh;
     background-image: url('../assets/aboutus.jpg');
     background-repeat: no-repeat;
@@ -26,3 +26,10 @@
 .heading{
     font-weight: 600;
 }
+
+.dancing-script-text{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }

@@ -30,6 +30,9 @@ function nav(){
                         <li class="nav-item">
                         <a class="nav-link text-dark" href="/aboutus">Aboutus</a>
                         </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="/academics">Academics</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -171,11 +174,11 @@ export default function Home() {
                 <p className='heading-color fst-italic'> A Legacy of Excellence in Education</p>
                 <div className='conatiner overview-lg my-3'>
                     <h3 className='sub-heading-color'>About Us</h3>
-                    <p className='lead'>Established with the vision to nurture responsible, disciplined, and knowledgeable citizens, Sisu Vidya Mandir focuses on academic excellence, personality development, and cultural heritage. With a team of dedicated educators, state-of-the-art facilities, and an engaging curriculum, we prepare students to succeed in all walks of life.</p>
+                    <p className=''>Established with the vision to nurture responsible, disciplined, and knowledgeable citizens, Sisu Vidya Mandir focuses on academic excellence, personality development, and cultural heritage. With a team of dedicated educators, state-of-the-art facilities, and an engaging curriculum, we prepare students to succeed in all walks of life.</p>
                 </div>
 
 
-                <div className='conatiner overview-lg my-2 lead'>
+                <div className='conatiner overview-lg my-2'>
                     <div className='row col-12 mt-3'>
                         <div className='col-md-5 d-flex'>
                             <img src={whyus} alt="" className='img-fluid col-md-9 mx-auto my-auto'/>
@@ -198,7 +201,7 @@ export default function Home() {
                     <h3 className='sub-heading-color'>Our Academic Approach</h3>
                     <div className='col-12 row'>
                         <div className='col-md-6'>
-                            <ul className='text-start lead'>
+                            <ul className='text-start'>
                                     <li>Innovative Curriculum: Encouraging creative thinking & problem-solving.</li>
                                     <li>Activity-Based Learning: Hands-on projects, science experiments & field trips.</li>
                                     <li>Competitive Exam Preparation: Olympiads, NTSE, and career guidance.</li>
@@ -220,7 +223,7 @@ export default function Home() {
                 <h4 className="mb-0 text-center">Important Updates</h4>
                 </div>
                 <div className="card-body">
-                <ul className="list-group lead">
+                <ul className="list-group">
                     {update.map((value,index)=>(
                         <l1 key={index} className="list-group-item">
                             {value}
@@ -241,7 +244,7 @@ export default function Home() {
                 <Row className="justify-content-center">
                     {achievementsData.map((achievement, index) => (
                     <Col md={4} sm={6} key={index} className="mb-4">
-                        <Card className="shadow-lg lead" style={{borderBottom:"2px solid rgba(56, 56, 247, 0.39)"}}>
+                        <Card className="shadow-lg" style={{borderBottom:"2px solid rgba(56, 56, 247, 0.39)"}}>
                         <Card.Img variant="top" src={achievement.image} alt={achievement.title} style={{height:"35vh"}}/>
                         <Card.Body style={{height:"20vh"}}>
                             <Card.Title style={{fontWeight:600}}>{achievement.title}</Card.Title>
