@@ -168,7 +168,7 @@ export default function Aboutus() {
                   <Card className="shadow-sm h-100" style={{borderBottom:"2px solid rgba(56, 56, 247, 0.39)"}}>
                     <Card.Body className="text-center">
                       <FaCheckCircle className="text-success fs-3 mb-2" />
-                      <Card.Title style={{color:"rgba(243, 57, 116, 0.952)"}}>{value.title}</Card.Title>
+                      <Card.Title>{value.title}</Card.Title>
                       <Card.Text >{value.description}</Card.Text>
                     </Card.Body>
                   </Card>

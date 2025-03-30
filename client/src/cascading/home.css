@@ -61,31 +61,12 @@
     }
   }
 
-  .dancing-script-text{
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
 
-  /* section2 */
-
-  .heading{
-    font-weight: 600;
-  }
-
-  .heading-color{
-    color: rgb(20, 20, 244);
-  }
-
-  .sub-heading-color{
-    color:  rgb(57, 57, 243);
-  }
   
   /* section3 */
 
   #school-overview {
-    padding: 50px 20px;
+    padding: 0px 20px;
     text-align: center;
 }
 
@@ -111,10 +92,6 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border-bottom: 2px solid rgba(56, 56, 247, 0.39);
-}
-
-.border-botto{
-  border-bottom: 10px solid rgba(56, 56, 247, 0.39);
 }
 
 /* section3 */

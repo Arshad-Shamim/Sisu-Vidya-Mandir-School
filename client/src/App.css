@@ -1,0 +1,22 @@
+.heading-color{
+    color: rgb(20, 20, 244);
+}
+
+.sub-heading-color{
+    color:  black;
+}
+
+.border-bottom{
+    border-bottom: rgb(57, 57, 243);
+}
+
+.heading{
+    font-weight: 600;
+}
+
+.dancing-script-text{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
