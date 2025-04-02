@@ -1,11 +1,45 @@
 import React,{useState,useEffect}from 'react'
 
-import {nav} from './Home.jsx'
+import {nav,footer} from './Home.jsx'
 import '../cascading/academics.css'
+import digitalClass from '../assets/digitalClasses.jpg'
+import selfDefence from '../assets/selfDefence.jpg'
+import leadership from '../assets/leadership.jpg'
 
 export default function Academics() {
 
     const msg = ["Quality Learning","Holistic Development","Future-Ready Education"]
+    const programs = [
+        {
+          title: "Digital Learning & Coding Classes",
+          image: digitalClass, 
+          points: [
+            "Students learn C Programming, HTML, CSS, JavaScript & Cybersecurity.",
+            "Hands-on projects to create basic websites, apps & coding games.",
+            "Preparing students for technology-driven careers."
+          ]
+        },
+        {
+          title: "Self-Defense & Physical Training",
+          image: selfDefence, 
+          points: [
+            "Karate & Self-Defense Training – To build confidence & fitness.",
+            "Scout & Guide Adventure Training – Leadership, teamwork & survival skills.",
+            "Yoga & Meditation Classes – For mental well-being & discipline."
+          ]
+        },
+        {
+          title: "Leadership & Personality Development",
+          image: leadership,
+          points: [
+            "Public Speaking & Communication Workshops.",
+            "Student Council & Leadership Programs.",
+            "Career Guidance & Skill-Based Learning."
+          ]
+        }
+      ];
+      
+
     const [index,setIndex] = useState(0);
 
     useEffect(() => {
@@ -86,6 +120,71 @@ export default function Academics() {
                 </div>
             </div>
         </div>
+    </section>
+
+    <section>
+        <div className="container py-5">
+        <h2 className="text-center mb-4 heading heading-color">Special Programs for Skill Development</h2>
+        <div className="row">
+            {programs.map((program, index) => (
+            <div key={index} className="col-md-4 mb-4">
+                <div className="card h-100 shadow-lg border-0">
+                <img src={program.image} alt={program.title} className="card-img-top img-fluid"  style={{width:"100%",height:"35vh"}}/>
+                <div className="card-body text-center">
+                    <h3 className="card-title">{program.title}</h3>
+                    <ul className="list-unstyled mt-3">
+                    {program.points.map((point, idx) => (
+                        <li key={idx} className="text-muted">💡 {point}</li>
+                    ))}
+                    </ul>
+                </div>
+                </div>
+            </div>
+            ))}
+        </div>
+        </div>
+    </section>
+
+    <section className="container my-5">
+      <h2 className="text-center mb-4 heading heading-color">Assessment & Evaluation</h2>
+      <div className="row">
+        <div className="col-md-6 mb-3">
+          <div className="card h-100 shadow-sm">
+            <div className="card-body">
+              <h5 className="card-title">✔ Continuous Learning Assessment (CLA)</h5>
+              <p className="card-text">Regular tests & assignments to track progress.</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 mb-3">
+          <div className="card h-100 shadow-sm">
+            <div className="card-body">
+              <h5 className="card-title">✔ Semester-Based Examination System</h5>
+              <p className="card-text">Transparent & structured evaluation for fair grading.</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 mb-3">
+          <div className="card h-100 shadow-sm">
+            <div className="card-body">
+              <h5 className="card-title">✔ Parent-Teacher Meetings (PTMs)</h5>
+              <p className="card-text">Regular updates on student progress through meetings.</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 mb-3">
+          <div className="card h-100 shadow-sm">
+            <div className="card-body">
+              <h5 className="card-title">✔ Online Result Portal</h5>
+              <p className="card-text">Parents can access report cards anytime with ease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+        {footer()}
     </section>
     </>
   )
