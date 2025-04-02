@@ -130,8 +130,8 @@ export default function Academics() {
             <div key={index} className="col-md-4 mb-4">
                 <div className="card h-100 shadow-lg border-0">
                 <img src={program.image} alt={program.title} className="card-img-top img-fluid"  style={{width:"100%",height:"35vh"}}/>
-                <div className="card-body text-center">
-                    <h3 className="card-title">{program.title}</h3>
+                <div className="card-body text-center borderBottom">
+                    <h4 className="card-title">{program.title}</h4>
                     <ul className="list-unstyled mt-3">
                     {program.points.map((point, idx) => (
                         <li key={idx} className="text-muted">💡 {point}</li>
@@ -150,7 +150,7 @@ export default function Academics() {
       <div className="row">
         <div className="col-md-6 mb-3">
           <div className="card h-100 shadow-sm">
-            <div className="card-body">
+            <div className="card-body borderBottom">
               <h5 className="card-title">✔ Continuous Learning Assessment (CLA)</h5>
               <p className="card-text">Regular tests & assignments to track progress.</p>
             </div>
@@ -158,7 +158,7 @@ export default function Academics() {
         </div>
         <div className="col-md-6 mb-3">
           <div className="card h-100 shadow-sm">
-            <div className="card-body">
+            <div className="card-body borderBottom">
               <h5 className="card-title">✔ Semester-Based Examination System</h5>
               <p className="card-text">Transparent & structured evaluation for fair grading.</p>
             </div>
@@ -166,7 +166,7 @@ export default function Academics() {
         </div>
         <div className="col-md-6 mb-3">
           <div className="card h-100 shadow-sm">
-            <div className="card-body">
+            <div className="card-body borderBottom">
               <h5 className="card-title">✔ Parent-Teacher Meetings (PTMs)</h5>
               <p className="card-text">Regular updates on student progress through meetings.</p>
             </div>
@@ -174,7 +174,7 @@ export default function Academics() {
         </div>
         <div className="col-md-6 mb-3">
           <div className="card h-100 shadow-sm">
-            <div className="card-body">
+            <div className="card-body borderBottom">
               <h5 className="card-title">✔ Online Result Portal</h5>
               <p className="card-text">Parents can access report cards anytime with ease.</p>
             </div>

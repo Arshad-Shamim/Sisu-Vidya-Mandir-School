@@ -6,8 +6,8 @@
     color:  black;
 }
 
-.border-bottom{
-    border-bottom: rgb(57, 57, 243);
+.borderBottom{
+    border-bottom:2px solid rgb(57, 57, 243);
 }
 
 .heading{
