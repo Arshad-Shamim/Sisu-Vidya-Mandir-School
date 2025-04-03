@@ -1,0 +1,15 @@
+#admission-sec-2{
+    height: 86vh;
+    background-image: url('../assets/Admission.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position:center;
+}
+
+.overview-lg{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border-bottom: 2px solid rgba(56, 56, 247, 0.39);
+  }

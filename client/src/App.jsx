@@ -5,6 +5,7 @@ import {Routes,Route,Navigate} from 'react-router-dom';
 import Home from './pages/Home.jsx'
 import Aboutus from './pages/Aboutus.jsx';
 import Academics from './pages/Academics.jsx';
+import Admission from './pages/Admission.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
         <Route path="/home" element={<Home/>}/>
         <Route path="/aboutus" element={<Aboutus/>}/>
         <Route path="/academics" element={<Academics/>}/>
+        <Route path="/admission" element={<Admission/>}/>
       </Routes>
     </>
   )

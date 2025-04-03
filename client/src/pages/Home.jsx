@@ -33,6 +33,9 @@ function nav(){
                         <li class="nav-item">
                         <a class="nav-link text-dark" href="/academics">Academics</a>
                         </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="/admission">Admission</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -181,7 +184,7 @@ export default function Home() {
                 <div className='conatiner overview-lg my-2'>
                     <div className='row col-12 mt-3'>
                         <div className='col-md-5 d-flex'>
-                            <img src={whyus} alt="" className='img-fluid col-md-9 mx-auto my-auto'/>
+                            <img src={whyus} alt="" className='img-fluid col-md-9 col-8 mx-auto my-auto'/>
                         </div>
                         <div className='col-md-7'>
                             <ul className='text-start'>
