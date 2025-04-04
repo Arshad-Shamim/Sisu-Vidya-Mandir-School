@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import {nav} from './Home.jsx';
+import {nav,footer} from './Home.jsx';
 import '../cascading/admission.css'
 import whyus from '../assets/whyus.png'
 
@@ -86,7 +86,69 @@ export default function Admission() {
                 </ul>
                 </div>
             </div>
-    </section>
+        </section>
+
+        <section className="container my-5">
+            <h3 className="mb-4 text-center heading heading-color">
+            Age Eligibility Criteria
+            </h3>
+            <div className="card shadow rounded-4 p-4">
+                <ul className="list-group list-group-flush">
+                <li className="list-group-item">✅ Nursery: <strong>3+ years</strong></li>
+                <li className="list-group-item">✅ LKG: <strong>4+ years</strong></li>
+                <li className="list-group-item">✅ UKG: <strong>5+ years</strong></li>
+                <li className="list-group-item">✅ Class 1 & Above: <strong>As per government age criteria</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section className="container my-5">
+            <h3 className="mb-4 text-center heading heading-color">Fee Structure</h3>
+            <div className="card shadow rounded-4 p-4">
+
+                <p className="mb-3">
+                💰 <strong>Affordable Monthly Fee:</strong> ₹<strong>99</strong> per student
+                </p>
+
+                <p className="mb-3">
+                💳 <strong>Payment Methods:</strong> Online banking, UPI, cash deposit at the school office
+                </p>
+
+                <a 
+                href="https://drive.google.com/file/d/1lTATmmBEW53SQ6v9YsjFV3mYqK4dUoVl/view?usp=drive_link" 
+                className="btn btn-primary mt-2 target_blank" 
+                target="_blank"
+                download
+                >
+                📥 Download Full Fee Structure (PDF)
+                </a>
+            </div>
+        </section>
+
+
+        <section className="container my-5">
+                <div className='text-center my-2'>
+                    <h3 className="mb-4 heading heading-color">Scholarships & Financial Aid</h3>
+                    <p>We offer scholarships & concessions for</p>
+                </div>
+            <div className="card shadow rounded-4 p-4">
+                <ul className="list-group list-group-flush mb-3">
+                <li className="list-group-item">✔ Economically weaker students</li>
+                <li className="list-group-item">✔ Meritorious students with outstanding academic performance</li>
+                <li className="list-group-item">✔ Students excelling in sports & extracurricular activities</li>
+                </ul>
+
+                <p className="mt-3 text-center">
+                📩 <strong>Contact the school office for scholarship application details</strong>
+                </p>
+            </div>
+        </section>
+
+
+        <section>
+            {footer()}
+        </section>
+
     </>
   )
 }
