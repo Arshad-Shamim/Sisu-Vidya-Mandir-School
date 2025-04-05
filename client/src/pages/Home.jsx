@@ -36,6 +36,9 @@ function nav(){
                         <li class="nav-item">
                         <a class="nav-link text-dark" href="/admission">Admission</a>
                         </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="/infrastructure">Infrastructure</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -53,14 +56,6 @@ function footer(){
             {/* Contact Info */}
             <p>📍 Hindol, Dhenkanal, Odisha, India</p>
             <p>📧gengutiasishimandir@gmail.com | 📞+91 9437349352</p>
-
-            {/* Navigation Links */}
-            <nav>
-            <a href="/" className="text-white mx-2 text-decoration-none">Home</a>
-            <a href="/about" className="text-white mx-2 text-decoration-none">About</a>
-            <a href="/courses" className="text-white mx-2 text-decoration-none">Courses</a>
-            <a href="/contact" className="text-white mx-2 text-decoration-none">Contact</a>
-            </nav>
 
             {/* Social Media Icons */}
             <div className="mt-3">
