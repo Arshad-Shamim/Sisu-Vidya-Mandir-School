@@ -7,6 +7,7 @@ import Aboutus from './pages/Aboutus.jsx';
 import Academics from './pages/Academics.jsx';
 import Admission from './pages/Admission.jsx';
 import Infrastructure from './pages/Infrastructure.jsx';
+import Event from './pages/Events.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Route path="/academics" element={<Academics/>}/>
         <Route path="/admission" element={<Admission/>}/>
         <Route path="/infrastructure" element={<Infrastructure/>}/>
+        <Route path="/events" element={<Event/>}/>
       </Routes>
     </>
   )

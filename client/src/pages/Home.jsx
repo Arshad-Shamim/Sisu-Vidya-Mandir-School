@@ -39,6 +39,9 @@ function nav(){
                         <li class="nav-item">
                         <a class="nav-link text-dark" href="/infrastructure">Infrastructure</a>
                         </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="/events">Events</a>
+                        </li>
                     </ul>
                 </div>
             </div>
