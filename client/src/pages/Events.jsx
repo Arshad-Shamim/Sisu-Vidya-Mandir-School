@@ -55,15 +55,14 @@ export default function Events() {
               src={image.src}
               alt={image.alt}
               style={{
-                height: "80vh",
+                height: "65vh",
                 width:"100%",
                 borderRadius: "30px",
               }}
             />
             <Carousel.Caption>
                 <div>
-                    <h5 className='text-dark fw-bold fs-1 text-white'>{image.alt}</h5>
-                    <p></p>
+                    <p className='text-dark fs-5 fw-bold text-white'>{image.alt}</p>
                 </div>
             </Carousel.Caption>
           </Carousel.Item>
