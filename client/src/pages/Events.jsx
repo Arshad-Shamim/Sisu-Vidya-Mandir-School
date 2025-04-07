@@ -4,19 +4,25 @@ import {Carousel,Container, Row, Col, Card } from 'react-bootstrap'
 
 import {nav} from '../pages/Home.jsx'
 import annualDay from '../assets/annualDay.jpg'
-import annualFuncation from '../assets/event.jpg'
-import scienceFair from '../assets/whyus.png'
-import independenceDay from '../assets/whyus.png'
+import sportDay from '../assets/sportDay.jpg'
+import scoutguide from '../assets/scout&guide.jpg'
+import scienceInnovation from '../assets/scienceInnovation.jpeg'
+import festival from '../assets/festival.jpg'
+import educationalTrips from '../assets/educationTrip.jpeg'
+import independenceDay from '../assets/independenceDay.jpg'
 import '../cascading/Events.css'
 
 
 export default function Events() {
 
         const images = [
-        { src: annualDay, alt: "Annual Day" },
-        { src: annualFuncation, alt: "Annual Function" },
-        { src: scienceFair, alt: "Science Fair" },
-        { src: independenceDay, alt: "Independence Day Celebration" },
+        { src: annualDay, alt: "Annual Day"},
+        { src: sportDay, alt: "Sports Day & Physical Training" },
+        { src: scoutguide, alt: "Scout & Guide Adventure Camps" },
+        { src: scienceInnovation, alt: "Science & Innovation Exhibition" },
+        { src: independenceDay, alt: "Independence Day & Republic Day Programs" },
+        { src: festival, alt: "Festival Celebrations" },
+        { src:  educationalTrips, alt: "Educational Field Trips & Excursion" },
     ];
   return (
     <>
@@ -37,21 +43,35 @@ export default function Events() {
             </div>
         </section>
 
-                {/* <section className='my-5'>
-            <div className="container">
-                <h3 className="text-center heading py-1 heading-color">Annual & Special Events</h3>
-                <Carousel style={{height:"80vh"}}>
-                    {images.map((image, index) => (
-                    <Carousel.Item key={index}>
-                        <img className="d-block mx-auto border col-12" src={image.src} alt={image.alt} style={{height:"60vh",borderRadius:"30px"}}/>
-                        <Carousel.Caption>
-                        <h5 className='text-dark fw-bold fs-1 text-white'>{image.alt}</h5>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    ))}
-                </Carousel>
-            </div>
-        </section> */}
+        <section className='my-5'>
+  <div className="container">
+    <h3 className="text-center heading py-1 heading-color">Annual & Special Events</h3>
+    <div style={{ height: "80vh" }}>
+      <Carousel>
+        {images.map((image, index) => (
+          <Carousel.Item key={index}>
+            <img
+              className="d-block mx-auto border col-12"
+              src={image.src}
+              alt={image.alt}
+              style={{
+                height: "80vh",
+                width:"100%",
+                borderRadius: "30px",
+              }}
+            />
+            <Carousel.Caption>
+                <div>
+                    <h5 className='text-dark fw-bold fs-1 text-white'>{image.alt}</h5>
+                    <p></p>
+                </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
+  </div>
+</section>
     </>
   )
 }
