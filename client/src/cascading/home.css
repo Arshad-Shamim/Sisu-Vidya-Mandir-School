@@ -1,9 +1,4 @@
 
-#logo{
-    width: 12vw;
-    height: 10vh;
-    object-fit:fill;
-}
 
 /* section2 */
 .video-section {
@@ -59,6 +54,11 @@
       font-size: 4000px;
       bottom: 2%;
     }
+    #logo{
+      width: 12vw;
+      height: 12vh;
+      object-fit:fill;
+    }
   }
 
   @media(max-width:700px) {
@@ -71,6 +71,11 @@
     #quote{
       display: none;
     }
+    #logo{
+      width: 21vw;
+      height: 13vh;
+      object-fit:fill;
+    }
   }
 
   @media(min-width:701px) and (max-width:999px){
@@ -79,6 +84,11 @@
       color: white;
       margin-left: 18%;
       bottom: 5%;
+    }
+    #logo{
+      width: 18vw;
+      height: 12vh;
+      object-fit:fill;
     }
   }
 

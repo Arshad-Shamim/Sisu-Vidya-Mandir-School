@@ -42,6 +42,9 @@ function nav(){
                         <li class="nav-item">
                         <a class="nav-link text-dark" href="/events">Events</a>
                         </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="/announcements">Announcements</a>
+                        </li>
                     </ul>
                 </div>
             </div>
