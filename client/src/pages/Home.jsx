@@ -45,6 +45,9 @@ function nav(){
                         <li class="nav-item">
                         <a class="nav-link text-dark" href="/announcements">Announcements</a>
                         </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="/contactus">Contact us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
